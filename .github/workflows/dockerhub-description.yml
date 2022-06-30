@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'docs/**/README.md'
+      - "docs/**/README.md"
       - .github/workflows/dockerhub-description.yml
 
 jobs:
@@ -17,7 +17,7 @@ jobs:
       - name: Docker Hub Description
         uses: peter-evans/dockerhub-description@v3
         with:
-          username: ${{ github.actor }}
+          username: ${{ secrets.DOCKER_USER_TOKEN }}
           password: ${{ secrets.DOCKER_HUB_TOKEN }}
           repository: ${{ github.repository }}
-          readme-filepath: './docs/hub/README.md'
+          readme-filepath: "./docs/hub/README.md"
