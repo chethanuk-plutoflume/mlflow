@@ -12,5 +12,5 @@ Please find mlflow docker images from [mlflow docker hub repository](https://hub
 Run following command
 
 ```
-docker run -d -p 5000:5000 burakince/mlflow
+docker run -d -p 5000:5000 chethanumeshaplutoflume/mlflow
 ```
